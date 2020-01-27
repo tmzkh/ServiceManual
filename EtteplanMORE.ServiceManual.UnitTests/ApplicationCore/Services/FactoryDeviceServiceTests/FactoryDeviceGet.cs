@@ -13,7 +13,7 @@ namespace EtteplanMORE.ServiceManual.UnitTests.ApplicationCore.Services.FactoryD
     {
 
         private readonly DbContextOptionsBuilder<FactoryContext> builder = new DbContextOptionsBuilder<FactoryContext>()
-                .UseMySql("server=xxx;database=ServiceManual;userid=xxx;pwd=xxx;SslMode=none");
+                .UseMySql("server=localhost;database=ServiceManual;userid=ServiceManualUser;pwd=TooEasyToGuess;SslMode=none");
 
         /// <summary>
         /// Tests fetching all factory devices from db (paginated though)
