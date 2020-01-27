@@ -15,7 +15,7 @@ using Xunit.Abstractions;
 namespace EtteplanMORE.ServiceManual.UnitTests.ApplicationCore.Services.MaintenanceTaskServiceTests {
     public class MaintenanceTaskPostPutAndDelete {
         private readonly DbContextOptionsBuilder<FactoryContext> builder = new DbContextOptionsBuilder<FactoryContext>()
-                .UseMySql("server=xxx;database=ServiceManual;userid=xxx;pwd=xxx;SslMode=none");
+                .UseMySql("server=localhost;database=ServiceManual;userid=ServiceManualUser;pwd=TooEasyToGuess;SslMode=none");
 
         private readonly ITestOutputHelper output;
 
